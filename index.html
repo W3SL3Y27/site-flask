@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ nome_site }}</title>
+</head>
+<body>
+    <h1>Bem-vindo ao {{ nome_site }}!</h1>
+    <nav>
+        <a href="{{ url_for('index') }}">Início</a> |
+        <a href="{{ url_for('perfil', nome='Usuário') }}">Perfil</a> |
+        <a href="{{ url_for('sobre') }}">Sobre</a> |
+        <a href="{{ url_for('contato') }}">Contato</a>
+    </nav>
+</body>
+</html>

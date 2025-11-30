@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-NOME_SITE = "India Eventos"  # Nome centralizado
+NOME_SITE = "Site Wesley"
 
 @app.route('/')
 def index():
@@ -17,7 +17,7 @@ def sobre():
 
 @app.route('/contato')
 def contato():
-    responsavel = "João Silva"
+    responsavel = "Wesley Fernandes"
     return render_template('contato.html', responsavel=responsavel, nome_site=NOME_SITE)
 
 if __name__ == '__main__':
